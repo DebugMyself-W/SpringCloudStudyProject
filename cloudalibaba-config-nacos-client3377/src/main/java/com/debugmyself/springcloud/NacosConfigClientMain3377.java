@@ -1,7 +1,20 @@
-package com.debugmyself.springcloud;/** 
-* 功能描述
-* 
-* @author wangxq
-* @date 2022年06月18日 17:05
-*/public class NacosConfigClientMain3377 {
+package com.debugmyself.springcloud;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+/**
+ * 功能描述
+ *
+ * @author wangxq
+ * @date 2022年06月18日 17:05
+ */
+@EnableDiscoveryClient
+@SpringBootApplication
+public class NacosConfigClientMain3377
+{
+    public static void main(String[] args) {
+        SpringApplication.run(NacosConfigClientMain3377.class, args);
+    }
 }

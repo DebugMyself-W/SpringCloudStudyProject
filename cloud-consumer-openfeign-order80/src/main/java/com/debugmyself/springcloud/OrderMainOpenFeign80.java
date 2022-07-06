@@ -1,13 +1,19 @@
 package com.debugmyself.springcloud;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
 /**
  * 功能描述
  *
  * @author wangxq
  * @date ${YEAR}年${MONTH}月${DAY}日 ${TIME}
  */
-public class Main {
+@SpringBootApplication
+@EnableFeignClients
+public class OrderMainOpenFeign80 {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SpringApplication.run(OrderMainOpenFeign80.class, args);
     }
 }

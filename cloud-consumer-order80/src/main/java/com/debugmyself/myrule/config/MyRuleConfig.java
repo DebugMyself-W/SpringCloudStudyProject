@@ -8,13 +8,11 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 功能描述
  *
- * @author: wangxq
- * @date: 2022年06月11日 21:09
+ * @author wangxq
+ * @data 2022年06月11日 21:09
  */
 @Configuration
-public class myRuleConfig {
-
-
+public class MyRuleConfig {
     @Bean
     public IRule myRule() {
         return new RandomRule();
